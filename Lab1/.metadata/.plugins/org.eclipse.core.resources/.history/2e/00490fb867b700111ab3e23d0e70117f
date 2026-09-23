@@ -122,54 +122,59 @@ int main(void)
 	HAL_Delay(2000);
 	*/
 
-	display7SEG(counter);
+	  display7SEG(counter);
 
-	switch (status) {
-	case 1: // Stage 1: Trục 1 XANH, Trục 2 ĐỎ
-		HAL_GPIO_WritePin(GPIOA, LED_RED_Pin | LED_YELLOW_Pin, GPIO_PIN_RESET);
-		HAL_GPIO_WritePin(GPIOA, LED_GREEN_Pin, GPIO_PIN_SET);
-	    HAL_GPIO_WritePin(GPIOA, LED_YELLOW_2_Pin | LED_GREEN_2_Pin, GPIO_PIN_RESET);
-	    HAL_GPIO_WritePin(GPIOA, LED_RED_2_Pin, GPIO_PIN_SET);
-	    break;
+	        // 2. Xử lý trạng thái đèn giao thông (SET = Sáng, RESET = Tắt)
+	        switch (status) {
+	            case 1: // TRẠNG THÁI 1: Trục 1 XANH, Trục 2 ĐỎ
+	                HAL_GPIO_WritePin(GPIOA, LED_RED_Pin | LED_YELLOW_Pin, GPIO_PIN_RESET);
+	                HAL_GPIO_WritePin(GPIOA, LED_GREEN_Pin, GPIO_PIN_SET);
+	                HAL_GPIO_WritePin(GPIOA, LED_YELLOW_2_Pin | LED_GREEN_2_Pin, GPIO_PIN_RESET);
+	                HAL_GPIO_WritePin(GPIOA, LED_RED_2_Pin, GPIO_PIN_SET);
+	                break;
 
-	case 2: // Stage 2: Trục 1 VÀNG, Trục 2 ĐỎ
-	    HAL_GPIO_WritePin(GPIOA, LED_RED_Pin | LED_GREEN_Pin, GPIO_PIN_RESET);
-	    HAL_GPIO_WritePin(GPIOA, LED_YELLOW_Pin, GPIO_PIN_SET);
-	    HAL_GPIO_WritePin(GPIOA, LED_YELLOW_2_Pin | LED_GREEN_2_Pin, GPIO_PIN_RESET);
-	    HAL_GPIO_WritePin(GPIOA, LED_RED_2_Pin, GPIO_PIN_SET);
-	    break;
+	            case 2: // TRẠNG THÁI 2: Trục 1 VÀNG, Trục 2 ĐỎ
+	                HAL_GPIO_WritePin(GPIOA, LED_RED_Pin | LED_GREEN_Pin, GPIO_PIN_RESET);
+	                HAL_GPIO_WritePin(GPIOA, LED_YELLOW_Pin, GPIO_PIN_SET);
+	                HAL_GPIO_WritePin(GPIOA, LED_YELLOW_2_Pin | LED_GREEN_2_Pin, GPIO_PIN_RESET);
+	                HAL_GPIO_WritePin(GPIOA, LED_RED_2_Pin, GPIO_PIN_SET);
+	                break;
 
-	 case 3: // Stage 3: Trục 1 ĐỎ, Trục 2 XANH
-	    HAL_GPIO_WritePin(GPIOA, LED_YELLOW_Pin | LED_GREEN_Pin, GPIO_PIN_RESET);
-	    HAL_GPIO_WritePin(GPIOA, LED_RED_Pin, GPIO_PIN_SET);
-	    HAL_GPIO_WritePin(GPIOA, LED_RED_2_Pin | LED_YELLOW_2_Pin, GPIO_PIN_RESET);
-	    HAL_GPIO_WritePin(GPIOA, LED_GREEN_2_Pin, GPIO_PIN_SET);
-	    break;
+	            case 3: // TRẠNG THÁI 3: Trục 1 ĐỎ, Trục 2 XANH
+	                HAL_GPIO_WritePin(GPIOA, LED_YELLOW_Pin | LED_GREEN_Pin, GPIO_PIN_RESET);
+	                HAL_GPIO_WritePin(GPIOA, LED_RED_Pin, GPIO_PIN_SET);
+	                HAL_GPIO_WritePin(GPIOA, LED_RED_2_Pin | LED_YELLOW_2_Pin, GPIO_PIN_RESET);
+	                HAL_GPIO_WritePin(GPIOA, LED_GREEN_2_Pin, GPIO_PIN_SET);
+	                break;
 
-	 case 4: // Stage 4: Trục 1 ĐỎ, Trục 2 VÀNG
-	    HAL_GPIO_WritePin(GPIOA, LED_YELLOW_Pin | LED_GREEN_Pin, GPIO_PIN_RESET);
-	    HAL_GPIO_WritePin(GPIOA, LED_RED_Pin, GPIO_PIN_SET);
-	    HAL_GPIO_WritePin(GPIOA, LED_RED_2_Pin | LED_GREEN_2_Pin, GPIO_PIN_RESET);
-	    HAL_GPIO_WritePin(GPIOA, LED_YELLOW_2_Pin, GPIO_PIN_SET);
-	    break;
-	  }
-	  HAL_Delay(1000);
-	  counter--;
-	  if (counter <= 0) {
-	  if (status == 1) {
-		  status = 2;       // Chuyển sang Vàng
-	      counter = 2;      // Đèn Vàng đếm 2s
-	  } else if (status == 2) {
-	      status = 3;       // Chuyển sang Xanh (Trục 2)
-	      counter = 3;      // Đèn Xanh đếm 3s
-	  } else if (status == 3) {
-	      status = 4;       // Chuyển sang Vàng (Trục 2)
-	      counter = 2;      // Đèn Vàng đếm 2s
-	  } else if (status == 4) {
-	      status = 1;       // Quay lại chu kỳ đầu
-	      counter = 3;      // Đèn Xanh đếm 3s
-	  	  }
-	  }
+	            case 4: // TRẠNG THÁI 4: Trục 1 ĐỎ, Trục 2 VÀNG
+	                HAL_GPIO_WritePin(GPIOA, LED_YELLOW_Pin | LED_GREEN_Pin, GPIO_PIN_RESET);
+	                HAL_GPIO_WritePin(GPIOA, LED_RED_Pin, GPIO_PIN_SET);
+	                HAL_GPIO_WritePin(GPIOA, LED_RED_2_Pin | LED_GREEN_2_Pin, GPIO_PIN_RESET);
+	                HAL_GPIO_WritePin(GPIOA, LED_YELLOW_2_Pin, GPIO_PIN_SET);
+	                break;
+	        }
+
+	        // 3. Trễ 1 giây cho mỗi nhịp đếm
+	        HAL_Delay(1000);
+
+	        // 4. Giảm biến đếm và chuyển đổi trạng thái khi đếm về 0
+	        counter--;
+	        if (counter <= 0) {
+	            if (status == 1) {
+	                status = 2;       // Chuyển sang Vàng
+	                counter = 2;      // Đèn Vàng đếm 2s
+	            } else if (status == 2) {
+	                status = 3;       // Chuyển sang Xanh (Trục 2)
+	                counter = 3;      // Đèn Xanh đếm 3s
+	            } else if (status == 3) {
+	                status = 4;       // Chuyển sang Vàng (Trục 2)
+	                counter = 2;      // Đèn Vàng đếm 2s
+	            } else if (status == 4) {
+	                status = 1;       // Quay lại chu kỳ đầu
+	                counter = 3;      // Đèn Xanh đếm 3s
+	            }
+	        }
   }
   /* USER CODE END 3 */
 }
