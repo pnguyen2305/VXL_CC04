@@ -43,7 +43,6 @@
 
 /* USER CODE BEGIN PV */
 const uint8_t seg7_code[10] = {0xC0, 0xF9, 0xA4, 0xB0, 0x99, 0x92, 0x82, 0xF8, 0x80, 0x90};
-//int count = 0;
 int status = 1;
 int counter = 3;
 /* USER CODE END PV */

@@ -1,17 +1,17 @@
-22:59:18 **** Incremental Build of configuration Debug for project LED_Animation ****
+13:33:23 **** Incremental Build of configuration Debug for project LED_Animation ****
 make -j8 all 
 arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
 ../Core/Src/main.c: In function 'main':
-../Core/Src/main.c:125:2: warning: implicit declaration of function 'display7SEG' [-Wimplicit-function-declaration]
-  125 |  display7SEG(counter);
-      |  ^~~~~~~~~~~
+../Core/Src/main.c:132:4: warning: implicit declaration of function 'display7SEG' [-Wimplicit-function-declaration]
+  132 |    display7SEG(counter);
+      |    ^~~~~~~~~~~
 ../Core/Src/main.c: At top level:
-../Core/Src/main.c:254:6: warning: conflicting types for 'display7SEG'
-  254 | void display7SEG(int num) {
+../Core/Src/main.c:259:6: warning: conflicting types for 'display7SEG'
+  259 | void display7SEG(int num) {
       |      ^~~~~~~~~~~
-../Core/Src/main.c:125:2: note: previous implicit declaration of 'display7SEG' was here
-  125 |  display7SEG(counter);
-      |  ^~~~~~~~~~~
+../Core/Src/main.c:132:4: note: previous implicit declaration of 'display7SEG' was here
+  132 |    display7SEG(counter);
+      |    ^~~~~~~~~~~
 arm-none-eabi-gcc -o "LED_Animation.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\VXL\Lab1\LED_Animation\STM32F103C6UX_FLASH.ld" --specs=nosys.specs -Wl,-Map="LED_Animation.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
 Finished building target: LED_Animation.elf
  
@@ -24,11 +24,11 @@ arm-none-eabi-objcopy  -O binary  LED_Animation.elf  "LED_Animation.bin"
 Finished building: default.size.stdout
  
 Finished building: LED_Animation.hex
-Finished building: LED_Animation.bin
 Finished building: LED_Animation.list
+Finished building: LED_Animation.bin
  
  
  
 
-22:59:19 Build Finished. 0 errors, 2 warnings. (took 986ms)
+13:33:24 Build Finished. 0 errors, 2 warnings. (took 872ms)
 
