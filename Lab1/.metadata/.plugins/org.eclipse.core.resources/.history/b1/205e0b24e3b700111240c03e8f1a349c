@@ -43,9 +43,9 @@
 
 /* USER CODE BEGIN PV */
 const uint8_t seg7_code[10] = {0xC0, 0xF9, 0xA4, 0xB0, 0x99, 0x92, 0x82, 0xF8, 0x80, 0x90};
-//int counter = 0;
-int status = 1;
-int counter = 3;
+/int count = 0;
+i//int status = 1;
+///int counter = 3;
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
@@ -159,11 +159,11 @@ int main(void)
 	 HAL_Delay(2000);
 	 */
 
-	 //if (counter >= 10) counter = 0;
-	 //display7SEG(counter++);
-	 //HAL_Delay(1000);
+	 if (counter >= 10) counter = 0;
+	 display7SEG(counter++);
+	 HAL_Delay(1000);
 
-
+	  /*
 	  display7SEG(counter);
 	  switch (status) {
 	  case 1: // TRẠNG THÁI 1: Trục 1 XANH, Trục 2 ĐỎ
@@ -208,6 +208,7 @@ int main(void)
 	          counter = 3;
 	  	  	  }
 	  }
+	*/
     /* USER CODE BEGIN 3 */
   }
   /* USER CODE END 3 */

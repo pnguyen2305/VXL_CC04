@@ -104,23 +104,6 @@ int main(void)
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
-	  clearAllClock();
-	  setNumberOnClock(hour % 12);
-	  setNumberOnClock(minute / 5);
-	  setNumberOnClock(second / 5);
-	  second++;
-	  if (second >= 60) {
-		  second = 0;
-	      minute++;
-	  }
-	  if (minute >= 60) {
-	      minute = 0;
-	      hour++;
-	  }
-	  if (hour >= 24) {
-	      hour = 0;
-	  }
-	  HAL_Delay(10);
   }
   /* USER CODE END 3 */
 }

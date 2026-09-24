@@ -163,7 +163,7 @@ int main(void)
 	 //display7SEG(counter++);
 	 //HAL_Delay(1000);
 
-
+	  /*
 	  display7SEG(counter);
 	  switch (status) {
 	  case 1: // TRẠNG THÁI 1: Trục 1 XANH, Trục 2 ĐỎ
@@ -208,6 +208,7 @@ int main(void)
 	          counter = 3;
 	  	  	  }
 	  }
+	*/
     /* USER CODE BEGIN 3 */
   }
   /* USER CODE END 3 */

@@ -106,14 +106,13 @@ int main(void)
   /* Initialize all configured peripherals */
   MX_GPIO_Init();
  8000158:	f000 f896 	bl	8000288 <MX_GPIO_Init>
-	  	  HAL_GPIO_WritePin(GPIOA, led_pins[i], GPIO_PIN_SET);
-	  	  HAL_Delay(500);
-	  	  HAL_GPIO_WritePin(GPIOA, led_pins[i], GPIO_PIN_RESET);
-	  }
-	  */
+  while (1)
+  {
+    /* USER CODE END WHILE */
+
+    /* USER CODE BEGIN 3 */
 	  clearAllClock();
  800015c:	f000 f8c8 	bl	80002f0 <clearAllClock>
-
 	  setNumberOnClock(hour % 12);
  8000160:	4b26      	ldr	r3, [pc, #152]	; (80001fc <main+0xb0>)
  8000162:	681a      	ldr	r2, [r3, #0]
@@ -149,7 +148,6 @@ int main(void)
  80001a4:	1ad3      	subs	r3, r2, r3
  80001a6:	4618      	mov	r0, r3
  80001a8:	f000 f8c0 	bl	800032c <setNumberOnClock>
-
 	  second++;
  80001ac:	4b17      	ldr	r3, [pc, #92]	; (800020c <main+0xc0>)
  80001ae:	681b      	ldr	r3, [r3, #0]
@@ -198,9 +196,8 @@ int main(void)
  80001f0:	2200      	movs	r2, #0
  80001f2:	601a      	str	r2, [r3, #0]
 	  }
-
-	  HAL_Delay(100);
- 80001f4:	2064      	movs	r0, #100	; 0x64
+	  HAL_Delay(10);
+ 80001f4:	200a      	movs	r0, #10
  80001f6:	f000 f9a3 	bl	8000540 <HAL_Delay>
 	  clearAllClock();
  80001fa:	e7af      	b.n	800015c <main+0x10>
