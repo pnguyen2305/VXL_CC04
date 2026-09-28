@@ -1,0 +1,34 @@
+22:54:37 **** Incremental Build of configuration Debug for project LED_Animation ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:190:10: warning: implicit declaration of function 'display7SEG' [-Wimplicit-function-declaration]
+  190 |          display7SEG(display_num);
+      |          ^~~~~~~~~~~
+../Core/Src/main.c: At top level:
+../Core/Src/main.c:279:6: warning: conflicting types for 'display7SEG'
+  279 | void display7SEG(int num) {
+      |      ^~~~~~~~~~~
+../Core/Src/main.c:190:10: note: previous implicit declaration of 'display7SEG' was here
+  190 |          display7SEG(display_num);
+      |          ^~~~~~~~~~~
+arm-none-eabi-gcc -o "LED_Animation.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\VXL\Lab1\LED_Animation\STM32F103C6UX_FLASH.ld" --specs=nosys.specs -Wl,-Map="LED_Animation.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: LED_Animation.elf
+ 
+arm-none-eabi-size   LED_Animation.elf 
+arm-none-eabi-objdump -h -S  LED_Animation.elf  > "LED_Animation.list"
+arm-none-eabi-objcopy  -O ihex  LED_Animation.elf  "LED_Animation.hex"
+   text	   data	    bss	    dec	    hex	filename
+   5116	     24	   1568	   6708	   1a34	LED_Animation.elf
+arm-none-eabi-objcopy  -O binary  LED_Animation.elf  "LED_Animation.bin"
+Finished building: default.size.stdout
+ 
+Finished building: LED_Animation.list
+ 
+Finished building: LED_Animation.bin
+Finished building: LED_Animation.hex
+ 
+ 
+
+22:54:43 Build Finished. 0 errors, 2 warnings. (took 5s.766ms)
+
