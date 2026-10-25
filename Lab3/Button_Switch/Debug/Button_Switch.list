@@ -1040,6 +1040,7 @@ int main(void)
 	            }
 	        }
 	        else {
+	        	 //Mode 2
 	             led_buffer[0] = 0;
  80007a6:	4b36      	ldr	r3, [pc, #216]	; (8000880 <main+0x2bc>)
  80007a8:	2200      	movs	r2, #0
