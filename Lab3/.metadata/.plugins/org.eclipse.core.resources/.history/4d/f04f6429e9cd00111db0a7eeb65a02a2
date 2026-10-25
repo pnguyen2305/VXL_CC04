@@ -1,0 +1,90 @@
+/*
+ * input_processing.c
+ *
+ *  Created on: Oct 20, 2026
+ *      Author: DELL
+ */
+
+#include "input_processing.h"
+#include "input_reading.h"
+
+int system_mode = 1;
+
+int red_duration = 5;
+int amber_duration = 2;
+int green_duration = 3;
+int temp_red = 5;
+int temp_amber = 2;
+int temp_green = 3;
+
+int btn1_flag = 0;
+int btn2_flag = 0;
+int btn3_flag = 0;
+
+void fsm_for_input_processing(void) {
+    // ---------------- NÚT 1: CHUYỂN MODE ----------------
+    if (is_button_pressed(0)) {
+        if (btn1_flag == 0) {
+            btn1_flag = 1;
+
+            system_mode++;
+            if (system_mode > 4) system_mode = 1;
+
+            // Mỗi khi chuyển Mode, luôn lấy giá trị gốc nạp vào giá trị tạm
+            temp_red = red_duration;
+            temp_amber = amber_duration;
+            temp_green = green_duration;
+        }
+    } else {
+        btn1_flag = 0;
+    }
+
+    // ---------------- NÚT 2: TĂNG GIÁ TRỊ (RÀNG BUỘC ĐỎ = XANH + VÀNG) ----------------
+    if (is_button_pressed(1)) {
+        if (btn2_flag == 0) {
+            btn2_flag = 1;
+
+            if (system_mode == 2) { // Tăng Đỏ -> Xanh tăng theo
+                temp_red++;
+                temp_green++;
+                if (temp_red > 99) {
+                    temp_green = 1; // Reset Xanh về 1
+                    temp_red = temp_amber + temp_green; // Tính lại Đỏ
+                }
+            }
+            else if (system_mode == 3) { // Tăng Vàng -> Đỏ tăng theo
+                temp_amber++;
+                temp_red++;
+                if (temp_red > 99) {
+                    temp_amber = 1; // Reset Vàng về 1
+                    temp_red = temp_amber + temp_green; // Tính lại Đỏ
+                }
+            }
+            else if (system_mode == 4) { // Tăng Xanh -> Đỏ tăng theo
+                temp_green++;
+                temp_red++;
+                if (temp_red > 99) {
+                    temp_green = 1; // Reset Xanh về 1
+                    temp_red = temp_amber + temp_green; // Tính lại Đỏ
+                }
+            }
+        }
+    } else {
+        btn2_flag = 0;
+    }
+
+    // ---------------- NÚT 3: LƯU GIÁ TRỊ (SET) ----------------
+    if (is_button_pressed(2)) {
+        if (btn3_flag == 0) {
+            btn3_flag = 1;
+            // Vì các biến đã được ràng buộc dính chùm, khi Lưu ta lưu cả 3 cùng lúc
+            if (system_mode == 2 || system_mode == 3 || system_mode == 4) {
+                red_duration = temp_red;
+                amber_duration = temp_amber;
+                green_duration = temp_green;
+            }
+        }
+    } else {
+        btn3_flag = 0;
+    }
+}

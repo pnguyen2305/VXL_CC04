@@ -1,0 +1,79 @@
+#include "led_display.h"
+
+int led_buffer[4] = {0, 0, 0, 0};
+
+void display7SEG(int num) {
+    // Tắt toàn bộ các nét (A-G) trước khi xuất số mới (Active Low -> SET là Tắt)
+    HAL_GPIO_WritePin(GPIOB, GPIO_PIN_3|GPIO_PIN_4|GPIO_PIN_5|GPIO_PIN_6|GPIO_PIN_7|GPIO_PIN_8|GPIO_PIN_9, GPIO_PIN_SET);
+
+    switch (num) {
+        case 0: // Sáng A, B, C, D, E, F
+            HAL_GPIO_WritePin(GPIOB, GPIO_PIN_3|GPIO_PIN_4|GPIO_PIN_5|GPIO_PIN_6|GPIO_PIN_7|GPIO_PIN_8, GPIO_PIN_RESET);
+            break;
+        case 1: // Sáng B, C
+            HAL_GPIO_WritePin(GPIOB, GPIO_PIN_4|GPIO_PIN_5, GPIO_PIN_RESET);
+            break;
+        case 2: // Sáng A, B, D, E, G
+            HAL_GPIO_WritePin(GPIOB, GPIO_PIN_3|GPIO_PIN_4|GPIO_PIN_6|GPIO_PIN_7|GPIO_PIN_9, GPIO_PIN_RESET);
+            break;
+        case 3: // Sáng A, B, C, D, G
+            HAL_GPIO_WritePin(GPIOB, GPIO_PIN_3|GPIO_PIN_4|GPIO_PIN_5|GPIO_PIN_6|GPIO_PIN_9, GPIO_PIN_RESET);
+            break;
+        case 4: // Sáng B, C, F, G
+            HAL_GPIO_WritePin(GPIOB, GPIO_PIN_4|GPIO_PIN_5|GPIO_PIN_8|GPIO_PIN_9, GPIO_PIN_RESET);
+            break;
+        case 5: // Sáng A, C, D, F, G
+            HAL_GPIO_WritePin(GPIOB, GPIO_PIN_3|GPIO_PIN_5|GPIO_PIN_6|GPIO_PIN_8|GPIO_PIN_9, GPIO_PIN_RESET);
+            break;
+        case 6: // Sáng A, C, D, E, F, G
+            HAL_GPIO_WritePin(GPIOB, GPIO_PIN_3|GPIO_PIN_5|GPIO_PIN_6|GPIO_PIN_7|GPIO_PIN_8|GPIO_PIN_9, GPIO_PIN_RESET);
+            break;
+        case 7: // Sáng A, B, C
+            HAL_GPIO_WritePin(GPIOB, GPIO_PIN_3|GPIO_PIN_4|GPIO_PIN_5, GPIO_PIN_RESET);
+            break;
+        case 8: // Sáng tất cả
+            HAL_GPIO_WritePin(GPIOB, GPIO_PIN_3|GPIO_PIN_4|GPIO_PIN_5|GPIO_PIN_6|GPIO_PIN_7|GPIO_PIN_8|GPIO_PIN_9, GPIO_PIN_RESET);
+            break;
+        case 9: // Sáng A, B, C, D, F, G
+            HAL_GPIO_WritePin(GPIOB, GPIO_PIN_3|GPIO_PIN_4|GPIO_PIN_5|GPIO_PIN_6|GPIO_PIN_8|GPIO_PIN_9, GPIO_PIN_RESET);
+            break;
+    }
+}
+
+void update7SEG(int index) {
+    // 1. Tắt toàn bộ 4 LED 7 đoạn (Vì nối trực tiếp không qua PNP -> RESET là tắt)
+    HAL_GPIO_WritePin(GPIOB, GPIO_PIN_10 | GPIO_PIN_11 | GPIO_PIN_12 | GPIO_PIN_13, GPIO_PIN_RESET);
+
+    // 2. Cập nhật dữ liệu cho các chân nét (A-G)
+    display7SEG(led_buffer[index]);
+
+    // 3. Bật riêng LED cần hiển thị (SET là cấp nguồn bật)
+    switch (index) {
+        case 0: HAL_GPIO_WritePin(GPIOB, GPIO_PIN_10, GPIO_PIN_SET); break;
+        case 1: HAL_GPIO_WritePin(GPIOB, GPIO_PIN_11, GPIO_PIN_SET); break;
+        case 2: HAL_GPIO_WritePin(GPIOB, GPIO_PIN_12, GPIO_PIN_SET); break;
+        case 3: HAL_GPIO_WritePin(GPIOB, GPIO_PIN_13, GPIO_PIN_SET); break;
+    }
+}
+
+void clearAllTrafficLights(void) {
+    // Tắt toàn bộ 12 LED ở chân PA0 - PA5 (Active High -> RESET là tắt)
+    HAL_GPIO_WritePin(GPIOA, GPIO_PIN_0|GPIO_PIN_1|GPIO_PIN_2|GPIO_PIN_3|GPIO_PIN_4|GPIO_PIN_5, GPIO_PIN_RESET);
+}
+
+// ================= CÁC HÀM HỖ TRỢ NHÁY ĐÈN (DÙNG CHO MODE 2, 3, 4) ================= //
+
+void toggleRedTrafficLights(void) {
+    // Đèn đỏ nối ở PA0 và PA3
+    HAL_GPIO_TogglePin(GPIOA, GPIO_PIN_0 | GPIO_PIN_3);
+}
+
+void toggleAmberTrafficLights(void) {
+    // Đèn vàng nối ở PA1 và PA4
+    HAL_GPIO_TogglePin(GPIOA, GPIO_PIN_1 | GPIO_PIN_4);
+}
+
+void toggleGreenTrafficLights(void) {
+    // Đèn xanh nối ở PA2 và PA5
+    HAL_GPIO_TogglePin(GPIOA, GPIO_PIN_2 | GPIO_PIN_5);
+}

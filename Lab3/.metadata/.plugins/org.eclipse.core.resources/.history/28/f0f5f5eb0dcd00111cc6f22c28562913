@@ -1,0 +1,23 @@
+/*
+ * led_display.c
+ *
+ *  Created on: Oct 20, 2026
+ *      Author: DELL
+ */
+
+#include "led_display.h"
+
+int led_buffer[4] = {0, 0, 0, 0};
+
+void display7SEG(int num) {
+    // Chép code bật các đoạn A, B, C, D, E, F, G ở Port B vào đây
+}
+
+void update7SEG(int index) {
+    // Chép code tắt 4 chân (PB10->PB13), gọi display7SEG, rồi bật chân index vào đây
+}
+
+void clearAllTrafficLights(void) {
+    // Tắt toàn bộ 12 LED ở chân PA0 - PA5
+    HAL_GPIO_WritePin(GPIOA, GPIO_PIN_0|GPIO_PIN_1|GPIO_PIN_2|GPIO_PIN_3|GPIO_PIN_4|GPIO_PIN_5, GPIO_PIN_RESET);
+}

@@ -1,0 +1,38 @@
+/*
+ * timer.c
+ *
+ *  Created on: Oct 20, 2026
+ *      Author: DELL
+ */
+
+
+#include "timer.h"
+#include "input_reading.h"
+
+int timer_counter[4] = {0, 0, 0, 0};
+int timer_flag[4] = {0, 0, 0, 0};
+int TIMER_CYCLE = 10; // Ngắt 10ms
+
+void setTimer(int index, int duration) {
+    timer_counter[index] = duration / TIMER_CYCLE;
+    timer_flag[index] = 0;
+}
+
+void timerRun() {
+    for(int i = 0; i < 4; i++) {
+        if(timer_counter[i] > 0) {
+            timer_counter[i]--;
+            if(timer_counter[i] == 0) {
+                timer_flag[i] = 1;
+            }
+        }
+    }
+}
+
+// Bắt ngắt Timer 2 tại đây
+void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim) {
+    if (htim->Instance == TIM2) {
+        button_reading(); // Quét nút nhấn 10ms/lần
+        timerRun();       // Chạy bộ đếm phần mềm
+    }
+}

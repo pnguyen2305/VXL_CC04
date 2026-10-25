@@ -1,0 +1,23 @@
+14:30:18 **** Incremental Build of configuration Debug for project Button_Switch ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "Button_Switch.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\VXL\VXL_CC04\Lab3\Button_Switch\STM32F103C6UX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Button_Switch.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Button_Switch.elf
+ 
+arm-none-eabi-size   Button_Switch.elf 
+arm-none-eabi-objdump -h -S  Button_Switch.elf  > "Button_Switch.list"
+arm-none-eabi-objcopy  -O ihex  Button_Switch.elf  "Button_Switch.hex"
+   text	   data	    bss	    dec	    hex	filename
+   8988	     80	   1704	  10772	   2a14	Button_Switch.elf
+arm-none-eabi-objcopy  -O binary  Button_Switch.elf  "Button_Switch.bin"
+Finished building: default.size.stdout
+ 
+Finished building: Button_Switch.bin
+Finished building: Button_Switch.hex
+Finished building: Button_Switch.list
+ 
+ 
+ 
+
+14:30:19 Build Finished. 0 errors, 0 warnings. (took 953ms)
+
