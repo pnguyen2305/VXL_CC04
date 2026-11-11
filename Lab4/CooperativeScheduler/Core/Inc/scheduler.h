@@ -16,10 +16,12 @@ typedef struct {
     uint32_t Period;
     uint8_t RunMe;
     uint32_t TaskID;
+    uint32_t Target_Time;
 } sTask;
 
 #define SCH_MAX_TASKS 40
 extern uint8_t current_index_task;
+extern uint32_t system_time;
 
 void SCH_Init(void);
 void SCH_Update(void);
