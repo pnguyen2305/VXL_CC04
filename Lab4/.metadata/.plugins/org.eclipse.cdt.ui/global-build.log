@@ -1,0 +1,1037 @@
+15:04:39 **** Build of configuration Debug for project CooperativeScheduler ****
+make -j8 all 
+arm-none-eabi-gcc "../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.d" -MT"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.o"
+arm-none-eabi-gcc "../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.d" -MT"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.o"
+arm-none-eabi-gcc "../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.d" -MT"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.o"
+arm-none-eabi-gcc "../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.d" -MT"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.o"
+arm-none-eabi-gcc "../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.d" -MT"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.o"
+arm-none-eabi-gcc "../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.d" -MT"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.d" -MT"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.o"
+arm-none-eabi-gcc "../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.d" -MT"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.d" -MT"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.o"
+arm-none-eabi-gcc "../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.d" -MT"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.o"
+arm-none-eabi-gcc "../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.d" -MT"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.d" -MT"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.o"
+arm-none-eabi-gcc "../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.d" -MT"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.d" -MT"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.o"
+arm-none-eabi-gcc -mcpu=cortex-m3 -g3 -DDEBUG -c -x assembler-with-cpp -MMD -MP -MF"Core/Startup/startup_stm32f103c6ux.d" -MT"Core/Startup/startup_stm32f103c6ux.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Startup/startup_stm32f103c6ux.o" "../Core/Startup/startup_stm32f103c6ux.s"
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc "../Core/Src/scheduler.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/scheduler.d" -MT"Core/Src/scheduler.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/scheduler.o"
+../Core/Src/scheduler.c:12:34: error: expected identifier or '(' before '[' token
+   12 | sTask SCH_tasks_G[SCH_MAX_TASKS];[cite: 73]
+      |                                  ^
+../Core/Src/scheduler.c: In function 'SCH_Add_Task':
+../Core/Src/scheduler.c:42:17: error: expected expression before '[' token
+   42 |         Index++;[cite: 75]
+      |                 ^
+../Core/Src/scheduler.c:42:18: error: 'cite' undeclared (first use in this function)
+   42 |         Index++;[cite: 75]
+      |                  ^~~~
+../Core/Src/scheduler.c:42:18: note: each undeclared identifier is reported only once for each function it appears in
+../Core/Src/scheduler.c:42:27: error: expected ';' before '}' token
+   42 |         Index++;[cite: 75]
+      |                           ^
+      |                           ;
+   43 |     }
+      |     ~                      
+../Core/Src/scheduler.c:46:30: error: expected expression before '[' token
+   46 |         return SCH_MAX_TASKS;[cite: 76]
+      |                              ^
+../Core/Src/scheduler.c:46:40: error: expected ';' before '}' token
+   46 |         return SCH_MAX_TASKS;[cite: 76]
+      |                                        ^
+      |                                        ;
+   47 |     }
+      |     ~                                   
+../Core/Src/scheduler.c:50:42: error: expected expression before '[' token
+   50 |     SCH_tasks_G[Index].pTask = pFunction;[cite: 76]
+      |                                          ^
+../Core/Src/scheduler.c:50:52: error: expected ';' before 'SCH_tasks_G'
+   50 |     SCH_tasks_G[Index].pTask = pFunction;[cite: 76]
+      |                                                    ^
+      |                                                    ;
+   51 |     SCH_tasks_G[Index].Delay = DELAY;[cite: 76]
+      |     ~~~~~~~~~~~                                     
+../Core/Src/scheduler.c:51:38: error: expected expression before '[' token
+   51 |     SCH_tasks_G[Index].Delay = DELAY;[cite: 76]
+      |                                      ^
+../Core/Src/scheduler.c:51:48: error: expected ';' before 'SCH_tasks_G'
+   51 |     SCH_tasks_G[Index].Delay = DELAY;[cite: 76]
+      |                                                ^
+      |                                                ;
+   52 |     SCH_tasks_G[Index].Period = PERIOD;[cite: 76]
+      |     ~~~~~~~~~~~                                 
+../Core/Src/scheduler.c:52:40: error: expected expression before '[' token
+   52 |     SCH_tasks_G[Index].Period = PERIOD;[cite: 76]
+      |                                        ^
+../Core/Src/scheduler.c:52:50: error: expected ';' before 'SCH_tasks_G'
+   52 |     SCH_tasks_G[Index].Period = PERIOD;[cite: 76]
+      |                                                  ^
+      |                                                  ;
+   53 |     SCH_tasks_G[Index].RunMe = 0;[cite: 76]
+      |     ~~~~~~~~~~~                                   
+../Core/Src/scheduler.c:53:34: error: expected expression before '[' token
+   53 |     SCH_tasks_G[Index].RunMe = 0;[cite: 76]
+      |                                  ^
+../Core/Src/scheduler.c:53:44: error: expected ';' before 'SCH_tasks_G'
+   53 |     SCH_tasks_G[Index].RunMe = 0;[cite: 76]
+      |                                            ^
+      |                                            ;
+   54 |     SCH_tasks_G[Index].TaskID = Index;
+      |     ~~~~~~~~~~~                             
+../Core/Src/scheduler.c: In function 'SCH_Dispatch_Tasks':
+../Core/Src/scheduler.c:68:36: error: expected expression before '[' token
+   68 |                 SCH_Delete_Task(i);[cite: 76]
+      |                                    ^
+../Core/Src/scheduler.c:68:37: error: 'cite' undeclared (first use in this function)
+   68 |                 SCH_Delete_Task(i);[cite: 76]
+      |                                     ^~~~
+../Core/Src/scheduler.c:68:46: error: expected ';' before '}' token
+   68 |                 SCH_Delete_Task(i);[cite: 76]
+      |                                              ^
+      |                                              ;
+   69 |             }
+      |             ~                                 
+../Core/Src/scheduler.c: In function 'SCH_Delete_Task':
+../Core/Src/scheduler.c:79:43: error: expected expression before '[' token
+   79 |         SCH_tasks_G[TASK_INDEX].pTask = 0;[cite: 77]
+      |                                           ^
+../Core/Src/scheduler.c:79:44: error: 'cite' undeclared (first use in this function)
+   79 |         SCH_tasks_G[TASK_INDEX].pTask = 0;[cite: 77]
+      |                                            ^~~~
+../Core/Src/scheduler.c:79:53: error: expected ';' before 'SCH_tasks_G'
+   79 |         SCH_tasks_G[TASK_INDEX].pTask = 0;[cite: 77]
+      |                                                     ^
+      |                                                     ;
+   80 |         SCH_tasks_G[TASK_INDEX].Delay = 0;[cite: 77]
+      |         ~~~~~~~~~~~                                  
+../Core/Src/scheduler.c:80:43: error: expected expression before '[' token
+   80 |         SCH_tasks_G[TASK_INDEX].Delay = 0;[cite: 77]
+      |                                           ^
+../Core/Src/scheduler.c:80:53: error: expected ';' before 'SCH_tasks_G'
+   80 |         SCH_tasks_G[TASK_INDEX].Delay = 0;[cite: 77]
+      |                                                     ^
+      |                                                     ;
+   81 |         SCH_tasks_G[TASK_INDEX].Period = 0;[cite: 77]
+      |         ~~~~~~~~~~~                                  
+../Core/Src/scheduler.c:81:44: error: expected expression before '[' token
+   81 |         SCH_tasks_G[TASK_INDEX].Period = 0;[cite: 77]
+      |                                            ^
+../Core/Src/scheduler.c:81:54: error: expected ';' before 'SCH_tasks_G'
+   81 |         SCH_tasks_G[TASK_INDEX].Period = 0;[cite: 77]
+      |                                                      ^
+      |                                                      ;
+   82 |         SCH_tasks_G[TASK_INDEX].RunMe = 0;[cite: 77]
+      |         ~~~~~~~~~~~                                   
+../Core/Src/scheduler.c:82:43: error: expected expression before '[' token
+   82 |         SCH_tasks_G[TASK_INDEX].RunMe = 0;[cite: 77]
+      |                                           ^
+../Core/Src/scheduler.c:82:53: error: expected ';' before 'return'
+   82 |         SCH_tasks_G[TASK_INDEX].RunMe = 0;[cite: 77]
+      |                                                     ^
+      |                                                     ;
+   83 |         return 1; // Xóa thành công[cite: 77]
+      |         ~~~~~~                                       
+../Core/Src/scheduler.c:85:1: warning: control reaches end of non-void function [-Wreturn-type]
+   85 | }
+      | ^
+arm-none-eabi-gcc "../Core/Src/stm32f1xx_hal_msp.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/stm32f1xx_hal_msp.d" -MT"Core/Src/stm32f1xx_hal_msp.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/stm32f1xx_hal_msp.o"
+make: *** [Core/Src/subdir.mk:37: Core/Src/scheduler.o] Error 1
+make: *** Waiting for unfinished jobs....
+"make -j8 all" terminated with exit code 2. Build might be incomplete.
+15:05:42 **** Incremental Build of configuration Debug for project CooperativeScheduler ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/scheduler.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/scheduler.d" -MT"Core/Src/scheduler.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/scheduler.o"
+arm-none-eabi-gcc "../Core/Src/stm32f1xx_it.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/stm32f1xx_it.d" -MT"Core/Src/stm32f1xx_it.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/stm32f1xx_it.o"
+arm-none-eabi-gcc "../Core/Src/syscalls.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/syscalls.d" -MT"Core/Src/syscalls.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/syscalls.o"
+arm-none-eabi-gcc "../Core/Src/sysmem.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/sysmem.d" -MT"Core/Src/sysmem.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/sysmem.o"
+arm-none-eabi-gcc "../Core/Src/system_stm32f1xx.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/system_stm32f1xx.d" -MT"Core/Src/system_stm32f1xx.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/system_stm32f1xx.o"
+../Core/Src/scheduler.c:11:34: error: expected identifier or '(' before '[' token
+   11 | sTask SCH_tasks_G[SCH_MAX_TASKS];[cite: 73]
+      |                                  ^
+../Core/Src/scheduler.c: In function 'SCH_Add_Task':
+../Core/Src/scheduler.c:41:17: error: expected expression before '[' token
+   41 |         Index++;[cite: 75]
+      |                 ^
+../Core/Src/scheduler.c:41:18: error: 'cite' undeclared (first use in this function)
+   41 |         Index++;[cite: 75]
+      |                  ^~~~
+../Core/Src/scheduler.c:41:18: note: each undeclared identifier is reported only once for each function it appears in
+../Core/Src/scheduler.c:41:27: error: expected ';' before '}' token
+   41 |         Index++;[cite: 75]
+      |                           ^
+      |                           ;
+   42 |     }
+      |     ~                      
+../Core/Src/scheduler.c:45:30: error: expected expression before '[' token
+   45 |         return SCH_MAX_TASKS;[cite: 76]
+      |                              ^
+../Core/Src/scheduler.c:45:40: error: expected ';' before '}' token
+   45 |         return SCH_MAX_TASKS;[cite: 76]
+      |                                        ^
+      |                                        ;
+   46 |     }
+      |     ~                                   
+../Core/Src/scheduler.c: In function 'SCH_Dispatch_Tasks':
+../Core/Src/scheduler.c:67:36: error: expected expression before '[' token
+   67 |                 SCH_Delete_Task(i);[cite: 76]
+      |                                    ^
+../Core/Src/scheduler.c:67:37: error: 'cite' undeclared (first use in this function)
+   67 |                 SCH_Delete_Task(i);[cite: 76]
+      |                                     ^~~~
+../Core/Src/scheduler.c:67:46: error: expected ';' before '}' token
+   67 |                 SCH_Delete_Task(i);[cite: 76]
+      |                                              ^
+      |                                              ;
+   68 |             }
+      |             ~                                 
+make: *** [Core/Src/subdir.mk:37: Core/Src/scheduler.o] Error 1
+make: *** Waiting for unfinished jobs....
+"make -j8 all" terminated with exit code 2. Build might be incomplete.
+15:05:58 **** Incremental Build of configuration Debug for project CooperativeScheduler ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/scheduler.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/scheduler.d" -MT"Core/Src/scheduler.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/scheduler.o"
+../Core/Src/scheduler.c:11:34: error: expected identifier or '(' before '[' token
+   11 | sTask SCH_tasks_G[SCH_MAX_TASKS];[cite: 73]
+      |                                  ^
+../Core/Src/scheduler.c: In function 'SCH_Add_Task':
+../Core/Src/scheduler.c:41:17: error: expected expression before '[' token
+   41 |         Index++;[cite: 75]
+      |                 ^
+../Core/Src/scheduler.c:41:18: error: 'cite' undeclared (first use in this function)
+   41 |         Index++;[cite: 75]
+      |                  ^~~~
+../Core/Src/scheduler.c:41:18: note: each undeclared identifier is reported only once for each function it appears in
+../Core/Src/scheduler.c:41:27: error: expected ';' before '}' token
+   41 |         Index++;[cite: 75]
+      |                           ^
+      |                           ;
+   42 |     }
+      |     ~                      
+../Core/Src/scheduler.c: In function 'SCH_Dispatch_Tasks':
+../Core/Src/scheduler.c:67:36: error: expected expression before '[' token
+   67 |                 SCH_Delete_Task(i);[cite: 76]
+      |                                    ^
+../Core/Src/scheduler.c:67:37: error: 'cite' undeclared (first use in this function)
+   67 |                 SCH_Delete_Task(i);[cite: 76]
+      |                                     ^~~~
+../Core/Src/scheduler.c:67:46: error: expected ';' before '}' token
+   67 |                 SCH_Delete_Task(i);[cite: 76]
+      |                                              ^
+      |                                              ;
+   68 |             }
+      |             ~                                 
+make: *** [Core/Src/subdir.mk:37: Core/Src/scheduler.o] Error 1
+"make -j8 all" terminated with exit code 2. Build might be incomplete.
+15:06:15 **** Incremental Build of configuration Debug for project CooperativeScheduler ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/scheduler.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/scheduler.d" -MT"Core/Src/scheduler.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/scheduler.o"
+../Core/Src/scheduler.c: In function 'SCH_Add_Task':
+../Core/Src/scheduler.c:41:17: error: expected expression before '[' token
+   41 |         Index++;[cite: 75]
+      |                 ^
+../Core/Src/scheduler.c:41:18: error: 'cite' undeclared (first use in this function)
+   41 |         Index++;[cite: 75]
+      |                  ^~~~
+../Core/Src/scheduler.c:41:18: note: each undeclared identifier is reported only once for each function it appears in
+../Core/Src/scheduler.c:41:27: error: expected ';' before '}' token
+   41 |         Index++;[cite: 75]
+      |                           ^
+      |                           ;
+   42 |     }
+      |     ~                      
+make: *** [Core/Src/subdir.mk:37: Core/Src/scheduler.o] Error 1
+"make -j8 all" terminated with exit code 2. Build might be incomplete.
+15:06:30 **** Incremental Build of configuration Debug for project CooperativeScheduler ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/scheduler.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/scheduler.d" -MT"Core/Src/scheduler.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/scheduler.o"
+arm-none-eabi-gcc -o "CooperativeScheduler.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\VXL\VXL_CC04\Lab4\CooperativeScheduler\STM32F103C6UX_FLASH.ld" --specs=nosys.specs -Wl,-Map="CooperativeScheduler.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: CooperativeScheduler.elf
+ 
+arm-none-eabi-size   CooperativeScheduler.elf 
+arm-none-eabi-objdump -h -S  CooperativeScheduler.elf  > "CooperativeScheduler.list"
+arm-none-eabi-objcopy  -O binary  CooperativeScheduler.elf  "CooperativeScheduler.bin"
+   text	   data	    bss	    dec	    hex	filename
+   7288	     20	   1716	   9024	   2340	CooperativeScheduler.elf
+Finished building: default.size.stdout
+ 
+Finished building: CooperativeScheduler.bin
+ 
+Finished building: CooperativeScheduler.list
+ 
+15:10:49 **** Incremental Build of configuration Debug for project CooperativeScheduler ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:112:3: warning: implicit declaration of function 'SCH_Init' [-Wimplicit-function-declaration]
+  112 |   SCH_Init();
+      |   ^~~~~~~~
+../Core/Src/main.c:113:3: warning: implicit declaration of function 'SCH_Add_Task' [-Wimplicit-function-declaration]
+  113 |   SCH_Add_Task(Task_1, 0, 50);  // Lặp lại mỗi 500ms
+      |   ^~~~~~~~~~~~
+../Core/Src/main.c:126:4: warning: implicit declaration of function 'SCH_Dispatch_Tasks' [-Wimplicit-function-declaration]
+  126 |    SCH_Dispatch_Tasks();
+      |    ^~~~~~~~~~~~~~~~~~
+../Core/Src/main.c: In function 'HAL_TIM_PeriodElapsedCallback':
+../Core/Src/main.c:263:9: warning: implicit declaration of function 'SCH_Update' [-Wimplicit-function-declaration]
+  263 |         SCH_Update();
+      |         ^~~~~~~~~~
+arm-none-eabi-gcc -o "CooperativeScheduler.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\VXL\VXL_CC04\Lab4\CooperativeScheduler\STM32F103C6UX_FLASH.ld" --specs=nosys.specs -Wl,-Map="CooperativeScheduler.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: CooperativeScheduler.elf
+ 
+arm-none-eabi-size   CooperativeScheduler.elf 
+arm-none-eabi-objdump -h -S  CooperativeScheduler.elf  > "CooperativeScheduler.list"
+arm-none-eabi-objcopy  -O binary  CooperativeScheduler.elf  "CooperativeScheduler.bin"
+   text	   data	    bss	    dec	    hex	filename
+  13568	    120	   2544	  16232	   3f68	CooperativeScheduler.elf
+Finished building: default.size.stdout
+ 
+Finished building: CooperativeScheduler.bin
+ 
+Finished building: CooperativeScheduler.list
+ 
+15:13:17 **** Incremental Build of configuration Debug for project CooperativeScheduler ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "CooperativeScheduler.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\VXL\VXL_CC04\Lab4\CooperativeScheduler\STM32F103C6UX_FLASH.ld" --specs=nosys.specs -Wl,-Map="CooperativeScheduler.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: CooperativeScheduler.elf
+ 
+arm-none-eabi-size   CooperativeScheduler.elf 
+arm-none-eabi-objdump -h -S  CooperativeScheduler.elf  > "CooperativeScheduler.list"
+arm-none-eabi-objcopy  -O binary  CooperativeScheduler.elf  "CooperativeScheduler.bin"
+   text	   data	    bss	    dec	    hex	filename
+  13568	    120	   2544	  16232	   3f68	CooperativeScheduler.elf
+Finished building: default.size.stdout
+ 
+Finished building: CooperativeScheduler.bin
+ 
+Finished building: CooperativeScheduler.list
+ 
+15:23:20 **** Incremental Build of configuration Debug for project CooperativeScheduler ****
+make -j8 all 
+arm-none-eabi-gcc -o "CooperativeScheduler.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\VXL\VXL_CC04\Lab4\CooperativeScheduler\STM32F103C6UX_FLASH.ld" --specs=nosys.specs -Wl,-Map="CooperativeScheduler.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: CooperativeScheduler.elf
+ 
+arm-none-eabi-size   CooperativeScheduler.elf 
+arm-none-eabi-objdump -h -S  CooperativeScheduler.elf  > "CooperativeScheduler.list"
+arm-none-eabi-objcopy  -O ihex  CooperativeScheduler.elf  "CooperativeScheduler.hex"
+   text	   data	    bss	    dec	    hex	filename
+  13568	    120	   2544	  16232	   3f68	CooperativeScheduler.elf
+arm-none-eabi-objcopy  -O binary  CooperativeScheduler.elf  "CooperativeScheduler.bin"
+Finished building: default.size.stdout
+ 
+Finished building: CooperativeScheduler.hex
+Finished building: CooperativeScheduler.bin
+ 
+ 
+Finished building: CooperativeScheduler.list
+ 
+15:36:08 **** Incremental Build of configuration Debug for project CooperativeScheduler ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc "../Core/Src/scheduler.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/scheduler.d" -MT"Core/Src/scheduler.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/scheduler.o"
+arm-none-eabi-gcc -o "CooperativeScheduler.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\VXL\VXL_CC04\Lab4\CooperativeScheduler\STM32F103C6UX_FLASH.ld" --specs=nosys.specs -Wl,-Map="CooperativeScheduler.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: CooperativeScheduler.elf
+ 
+arm-none-eabi-size   CooperativeScheduler.elf 
+arm-none-eabi-objdump -h -S  CooperativeScheduler.elf  > "CooperativeScheduler.list"
+arm-none-eabi-objcopy  -O ihex  CooperativeScheduler.elf  "CooperativeScheduler.hex"
+   text	   data	    bss	    dec	    hex	filename
+  13900	    120	   2552	  16572	   40bc	CooperativeScheduler.elf
+arm-none-eabi-objcopy  -O binary  CooperativeScheduler.elf  "CooperativeScheduler.bin"
+Finished building: default.size.stdout
+ 
+Finished building: CooperativeScheduler.hex
+Finished building: CooperativeScheduler.bin
+ 
+ 
+Finished building: CooperativeScheduler.list
+ 
+15:55:48 **** Incremental Build of configuration Debug for project CooperativeScheduler ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc "../Core/Src/scheduler.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/scheduler.d" -MT"Core/Src/scheduler.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/scheduler.o"
+arm-none-eabi-gcc -o "CooperativeScheduler.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\VXL\VXL_CC04\Lab4\CooperativeScheduler\STM32F103C6UX_FLASH.ld" --specs=nosys.specs -Wl,-Map="CooperativeScheduler.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: CooperativeScheduler.elf
+ 
+arm-none-eabi-size   CooperativeScheduler.elf 
+arm-none-eabi-objdump -h -S  CooperativeScheduler.elf  > "CooperativeScheduler.list"
+arm-none-eabi-objcopy  -O ihex  CooperativeScheduler.elf  "CooperativeScheduler.hex"
+   text	   data	    bss	    dec	    hex	filename
+  14236	    120	   2712	  17068	   42ac	CooperativeScheduler.elf
+arm-none-eabi-objcopy  -O binary  CooperativeScheduler.elf  "CooperativeScheduler.bin"
+Finished building: default.size.stdout
+ 
+Finished building: CooperativeScheduler.hex
+Finished building: CooperativeScheduler.bin
+ 
+ 
+Finished building: CooperativeScheduler.list
+ 
+11:44:48 **** Incremental Build of configuration Debug for project CooperativeScheduler ****
+make -j8 all 
+arm-none-eabi-size   CooperativeScheduler.elf 
+   text	   data	    bss	    dec	    hex	filename
+  14236	    120	   2712	  17068	   42ac	CooperativeScheduler.elf
+Finished building: default.size.stdout
+ 
+11:55:34 **** Incremental Build of configuration Debug for project CooperativeScheduler ****
+make -j8 all 
+arm-none-eabi-gcc "../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.d" -MT"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.o"
+arm-none-eabi-gcc "../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.d" -MT"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.o"
+arm-none-eabi-gcc "../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.d" -MT"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.o"
+arm-none-eabi-gcc "../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.d" -MT"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.o"
+arm-none-eabi-gcc "../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.d" -MT"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.o"
+arm-none-eabi-gcc "../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.d" -MT"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.d" -MT"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.o"
+arm-none-eabi-gcc "../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.d" -MT"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.d" -MT"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.o"
+arm-none-eabi-gcc "../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.d" -MT"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.o"
+arm-none-eabi-gcc "../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.d" -MT"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.d" -MT"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.o"
+arm-none-eabi-gcc "../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.d" -MT"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.d" -MT"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.o"
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc "../Core/Src/stm32f1xx_hal_msp.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/stm32f1xx_hal_msp.d" -MT"Core/Src/stm32f1xx_hal_msp.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/stm32f1xx_hal_msp.o"
+arm-none-eabi-gcc "../Core/Src/stm32f1xx_it.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/stm32f1xx_it.d" -MT"Core/Src/stm32f1xx_it.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/stm32f1xx_it.o"
+arm-none-eabi-gcc "../Core/Src/system_stm32f1xx.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/system_stm32f1xx.d" -MT"Core/Src/system_stm32f1xx.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/system_stm32f1xx.o"
+../Core/Src/main.c: In function 'get_time':
+../Core/Src/main.c:56:13: error: invalid storage class for function 'MX_GPIO_Init'
+   56 | static void MX_GPIO_Init(void);
+      |             ^~~~~~~~~~~~
+../Core/Src/main.c:57:13: error: invalid storage class for function 'MX_TIM2_Init'
+   57 | static void MX_TIM2_Init(void);
+      |             ^~~~~~~~~~~~
+../Core/Src/main.c:58:13: error: invalid storage class for function 'MX_USART1_UART_Init'
+   58 | static void MX_USART1_UART_Init(void);
+      |             ^~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:80:5: warning: 'main' is normally a non-static function [-Wmain]
+   80 | int main(void)
+      |     ^~~~
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:103:3: warning: implicit declaration of function 'MX_GPIO_Init'; did you mean 'HAL_GPIO_Init'? [-Wimplicit-function-declaration]
+  103 |   MX_GPIO_Init();
+      |   ^~~~~~~~~~~~
+      |   HAL_GPIO_Init
+../Core/Src/main.c:104:3: warning: implicit declaration of function 'MX_TIM2_Init' [-Wimplicit-function-declaration]
+  104 |   MX_TIM2_Init();
+      |   ^~~~~~~~~~~~
+../Core/Src/main.c:105:3: warning: implicit declaration of function 'MX_USART1_UART_Init' [-Wimplicit-function-declaration]
+  105 |   MX_USART1_UART_Init();
+      |   ^~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c: In function 'get_time':
+../Core/Src/main.c:134:6: error: static declaration of 'SystemClock_Config' follows non-static declaration
+  134 | void SystemClock_Config(void)
+      |      ^~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:55:6: note: previous declaration of 'SystemClock_Config' was here
+   55 | void SystemClock_Config(void);
+      |      ^~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:170:13: error: invalid storage class for function 'MX_TIM2_Init'
+  170 | static void MX_TIM2_Init(void)
+      |             ^~~~~~~~~~~~
+../Core/Src/main.c:215:13: error: invalid storage class for function 'MX_USART1_UART_Init'
+  215 | static void MX_USART1_UART_Init(void)
+      |             ^~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:248:13: error: invalid storage class for function 'MX_GPIO_Init'
+  248 | static void MX_GPIO_Init(void)
+      |             ^~~~~~~~~~~~
+../Core/Src/main.c:283:1: error: expected declaration or statement at end of input
+  283 | }
+      | ^
+At top level:
+../Core/Src/main.c:274:6: warning: 'Error_Handler' defined but not used [-Wunused-function]
+  274 | void Error_Handler(void)
+      |      ^~~~~~~~~~~~~
+../Core/Src/main.c:264:5: warning: '__io_putchar' defined but not used [-Wunused-function]
+  264 | int __io_putchar(int ch) {
+      |     ^~~~~~~~~~~~
+../Core/Src/main.c:257:6: warning: 'HAL_TIM_PeriodElapsedCallback' defined but not used [-Wunused-function]
+  257 | void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim) {
+      |      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:248:13: warning: 'MX_GPIO_Init' defined but not used [-Wunused-function]
+  248 | static void MX_GPIO_Init(void)
+      |             ^~~~~~~~~~~~
+../Core/Src/main.c:215:13: warning: 'MX_USART1_UART_Init' defined but not used [-Wunused-function]
+  215 | static void MX_USART1_UART_Init(void)
+      |             ^~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:170:13: warning: 'MX_TIM2_Init' defined but not used [-Wunused-function]
+  170 | static void MX_TIM2_Init(void)
+      |             ^~~~~~~~~~~~
+../Core/Src/main.c:134:6: warning: 'SystemClock_Config' defined but not used [-Wunused-function]
+  134 | void SystemClock_Config(void)
+      |      ^~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:80:5: warning: 'main' defined but not used [-Wunused-function]
+   80 | int main(void)
+      |     ^~~~
+make: *** [Core/Src/subdir.mk:37: Core/Src/main.o] Error 1
+make: *** Waiting for unfinished jobs....
+"make -j8 all" terminated with exit code 2. Build might be incomplete.
+11:56:10 **** Incremental Build of configuration Debug for project CooperativeScheduler ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "CooperativeScheduler.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\VXL\VXL_CC04\Lab4\CooperativeScheduler\STM32F103C6UX_FLASH.ld" --specs=nosys.specs -Wl,-Map="CooperativeScheduler.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: CooperativeScheduler.elf
+ 
+arm-none-eabi-size   CooperativeScheduler.elf 
+arm-none-eabi-objdump -h -S  CooperativeScheduler.elf  > "CooperativeScheduler.list"
+arm-none-eabi-objcopy  -O ihex  CooperativeScheduler.elf  "CooperativeScheduler.hex"
+   text	   data	    bss	    dec	    hex	filename
+  14236	    120	   2712	  17068	   42ac	CooperativeScheduler.elf
+arm-none-eabi-objcopy  -O binary  CooperativeScheduler.elf  "CooperativeScheduler.bin"
+Finished building: default.size.stdout
+ 
+Finished building: CooperativeScheduler.list
+ 
+Finished building: CooperativeScheduler.hex
+Finished building: CooperativeScheduler.bin
+ 
+ 
+12:02:05 **** Incremental Build of configuration Debug for project CooperativeScheduler ****
+make -j8 all 
+arm-none-eabi-gcc "../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.d" -MT"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.o"
+arm-none-eabi-gcc "../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.d" -MT"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.o"
+arm-none-eabi-gcc "../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.d" -MT"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.o"
+arm-none-eabi-gcc "../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.d" -MT"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.o"
+arm-none-eabi-gcc "../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.d" -MT"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.o"
+arm-none-eabi-gcc "../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.d" -MT"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.d" -MT"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.o"
+arm-none-eabi-gcc "../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.d" -MT"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.d" -MT"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.o"
+arm-none-eabi-gcc "../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.d" -MT"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.o"
+arm-none-eabi-gcc "../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.d" -MT"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.d" -MT"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.o"
+arm-none-eabi-gcc "../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.d" -MT"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.d" -MT"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.o"
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc "../Core/Src/stm32f1xx_hal_msp.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/stm32f1xx_hal_msp.d" -MT"Core/Src/stm32f1xx_hal_msp.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/stm32f1xx_hal_msp.o"
+../Core/Src/main.c: In function 'get_time':
+../Core/Src/main.c:56:13: error: invalid storage class for function 'MX_GPIO_Init'
+   56 | static void MX_GPIO_Init(void);
+      |             ^~~~~~~~~~~~
+../Core/Src/main.c:57:13: error: invalid storage class for function 'MX_TIM2_Init'
+   57 | static void MX_TIM2_Init(void);
+      |             ^~~~~~~~~~~~
+../Core/Src/main.c:58:13: error: invalid storage class for function 'MX_USART1_UART_Init'
+   58 | static void MX_USART1_UART_Init(void);
+      |             ^~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:80:5: warning: 'main' is normally a non-static function [-Wmain]
+   80 | int main(void)
+      |     ^~~~
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:103:3: warning: implicit declaration of function 'MX_GPIO_Init'; did you mean 'HAL_GPIO_Init'? [-Wimplicit-function-declaration]
+  103 |   MX_GPIO_Init();
+      |   ^~~~~~~~~~~~
+      |   HAL_GPIO_Init
+../Core/Src/main.c:104:3: warning: implicit declaration of function 'MX_TIM2_Init' [-Wimplicit-function-declaration]
+  104 |   MX_TIM2_Init();
+      |   ^~~~~~~~~~~~
+arm-none-eabi-gcc "../Core/Src/stm32f1xx_it.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/stm32f1xx_it.d" -MT"Core/Src/stm32f1xx_it.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/stm32f1xx_it.o"
+../Core/Src/main.c:105:3: warning: implicit declaration of function 'MX_USART1_UART_Init' [-Wimplicit-function-declaration]
+  105 |   MX_USART1_UART_Init();
+      |   ^~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c: In function 'get_time':
+../Core/Src/main.c:134:6: error: static declaration of 'SystemClock_Config' follows non-static declaration
+  134 | void SystemClock_Config(void)
+      |      ^~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:55:6: note: previous declaration of 'SystemClock_Config' was here
+   55 | void SystemClock_Config(void);
+      |      ^~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:170:13: error: invalid storage class for function 'MX_TIM2_Init'
+  170 | static void MX_TIM2_Init(void)
+      |             ^~~~~~~~~~~~
+../Core/Src/main.c:215:13: error: invalid storage class for function 'MX_USART1_UART_Init'
+  215 | static void MX_USART1_UART_Init(void)
+      |             ^~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:248:13: error: invalid storage class for function 'MX_GPIO_Init'
+  248 | static void MX_GPIO_Init(void)
+      |             ^~~~~~~~~~~~
+../Core/Src/main.c:283:1: error: expected declaration or statement at end of input
+  283 | }
+      | ^
+At top level:
+../Core/Src/main.c:274:6: warning: 'Error_Handler' defined but not used [-Wunused-function]
+  274 | void Error_Handler(void)
+      |      ^~~~~~~~~~~~~
+../Core/Src/main.c:264:5: warning: '__io_putchar' defined but not used [-Wunused-function]
+  264 | int __io_putchar(int ch) {
+      |     ^~~~~~~~~~~~
+../Core/Src/main.c:257:6: warning: 'HAL_TIM_PeriodElapsedCallback' defined but not used [-Wunused-function]
+  257 | void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim) {
+      |      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:248:13: warning: 'MX_GPIO_Init' defined but not used [-Wunused-function]
+  248 | static void MX_GPIO_Init(void)
+      |             ^~~~~~~~~~~~
+../Core/Src/main.c:215:13: warning: 'MX_USART1_UART_Init' defined but not used [-Wunused-function]
+  215 | static void MX_USART1_UART_Init(void)
+      |             ^~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:170:13: warning: 'MX_TIM2_Init' defined but not used [-Wunused-function]
+  170 | static void MX_TIM2_Init(void)
+      |             ^~~~~~~~~~~~
+../Core/Src/main.c:134:6: warning: 'SystemClock_Config' defined but not used [-Wunused-function]
+  134 | void SystemClock_Config(void)
+      |      ^~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:80:5: warning: 'main' defined but not used [-Wunused-function]
+   80 | int main(void)
+      |     ^~~~
+arm-none-eabi-gcc "../Core/Src/system_stm32f1xx.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/system_stm32f1xx.d" -MT"Core/Src/system_stm32f1xx.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/system_stm32f1xx.o"
+make: *** [Core/Src/subdir.mk:37: Core/Src/main.o] Error 1
+make: *** Waiting for unfinished jobs....
+"make -j8 all" terminated with exit code 2. Build might be incomplete.
+12:11:32 **** Incremental Build of configuration Debug for project CooperativeScheduler ****
+make -j8 all 
+arm-none-eabi-gcc "../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.d" -MT"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.o"
+arm-none-eabi-gcc "../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.d" -MT"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.o"
+arm-none-eabi-gcc "../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.d" -MT"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.o"
+arm-none-eabi-gcc "../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.d" -MT"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.o"
+arm-none-eabi-gcc "../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.d" -MT"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.o"
+arm-none-eabi-gcc "../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.d" -MT"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.d" -MT"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.o"
+arm-none-eabi-gcc "../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.d" -MT"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.d" -MT"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.o"
+arm-none-eabi-gcc "../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.d" -MT"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.o"
+arm-none-eabi-gcc "../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.d" -MT"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.d" -MT"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.o"
+arm-none-eabi-gcc "../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.d" -MT"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.d" -MT"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.o"
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc "../Core/Src/stm32f1xx_hal_msp.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/stm32f1xx_hal_msp.d" -MT"Core/Src/stm32f1xx_hal_msp.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/stm32f1xx_hal_msp.o"
+../Core/Src/main.c: In function 'get_time':
+../Core/Src/main.c:56:13: error: invalid storage class for function 'MX_GPIO_Init'
+   56 | static void MX_GPIO_Init(void);
+      |             ^~~~~~~~~~~~
+../Core/Src/main.c:57:13: error: invalid storage class for function 'MX_TIM2_Init'
+   57 | static void MX_TIM2_Init(void);
+      |             ^~~~~~~~~~~~
+../Core/Src/main.c:58:13: error: invalid storage class for function 'MX_USART1_UART_Init'
+   58 | static void MX_USART1_UART_Init(void);
+      |             ^~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:61:13: error: invalid storage class for function 'MX_GPIO_Init'
+   61 | static void MX_GPIO_Init(void);
+      |             ^~~~~~~~~~~~
+../Core/Src/main.c:62:13: error: invalid storage class for function 'MX_TIM2_Init'
+   62 | static void MX_TIM2_Init(void);
+      |             ^~~~~~~~~~~~
+../Core/Src/main.c:63:13: error: invalid storage class for function 'MX_USART1_UART_Init'
+   63 | static void MX_USART1_UART_Init(void);
+      |             ^~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:83:5: warning: 'main' is normally a non-static function [-Wmain]
+   83 | int main(void)
+      |     ^~~~
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:106:3: warning: implicit declaration of function 'MX_GPIO_Init'; did you mean 'HAL_GPIO_Init'? [-Wimplicit-function-declaration]
+  106 |   MX_GPIO_Init();
+      |   ^~~~~~~~~~~~
+      |   HAL_GPIO_Init
+../Core/Src/main.c:107:3: warning: implicit declaration of function 'MX_TIM2_Init' [-Wimplicit-function-declaration]
+  107 |   MX_TIM2_Init();
+      |   ^~~~~~~~~~~~
+../Core/Src/main.c:108:3: warning: implicit declaration of function 'MX_USART1_UART_Init' [-Wimplicit-function-declaration]
+  108 |   MX_USART1_UART_Init();
+      |   ^~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c: In function 'get_time':
+../Core/Src/main.c:137:6: error: static declaration of 'SystemClock_Config' follows non-static declaration
+  137 | void SystemClock_Config(void)
+      |      ^~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:60:6: note: previous declaration of 'SystemClock_Config' was here
+   60 | void SystemClock_Config(void);
+      |      ^~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:173:13: error: invalid storage class for function 'MX_TIM2_Init'
+  173 | static void MX_TIM2_Init(void)
+      |             ^~~~~~~~~~~~
+../Core/Src/main.c:218:13: error: invalid storage class for function 'MX_USART1_UART_Init'
+  218 | static void MX_USART1_UART_Init(void)
+      |             ^~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:251:13: error: invalid storage class for function 'MX_GPIO_Init'
+  251 | static void MX_GPIO_Init(void)
+      |             ^~~~~~~~~~~~
+../Core/Src/main.c:286:1: error: expected declaration or statement at end of input
+  286 | }
+      | ^
+At top level:
+../Core/Src/main.c:277:6: warning: 'Error_Handler' defined but not used [-Wunused-function]
+  277 | void Error_Handler(void)
+      |      ^~~~~~~~~~~~~
+../Core/Src/main.c:267:5: warning: '__io_putchar' defined but not used [-Wunused-function]
+  267 | int __io_putchar(int ch) {
+      |     ^~~~~~~~~~~~
+../Core/Src/main.c:260:6: warning: 'HAL_TIM_PeriodElapsedCallback' defined but not used [-Wunused-function]
+  260 | void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim) {
+      |      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:251:13: warning: 'MX_GPIO_Init' defined but not used [-Wunused-function]
+  251 | static void MX_GPIO_Init(void)
+      |             ^~~~~~~~~~~~
+../Core/Src/main.c:218:13: warning: 'MX_USART1_UART_Init' defined but not used [-Wunused-function]
+  218 | static void MX_USART1_UART_Init(void)
+      |             ^~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:173:13: warning: 'MX_TIM2_Init' defined but not used [-Wunused-function]
+  173 | static void MX_TIM2_Init(void)
+      |             ^~~~~~~~~~~~
+../Core/Src/main.c:137:6: warning: 'SystemClock_Config' defined but not used [-Wunused-function]
+  137 | void SystemClock_Config(void)
+      |      ^~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:83:5: warning: 'main' defined but not used [-Wunused-function]
+   83 | int main(void)
+      |     ^~~~
+make: *** [Core/Src/subdir.mk:37: Core/Src/main.o] Error 1
+make: *** Waiting for unfinished jobs....
+"make -j8 all" terminated with exit code 2. Build might be incomplete.
+12:13:52 **** Incremental Build of configuration Debug for project CooperativeScheduler ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc "../Core/Src/stm32f1xx_it.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/stm32f1xx_it.d" -MT"Core/Src/stm32f1xx_it.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/stm32f1xx_it.o"
+arm-none-eabi-gcc "../Core/Src/system_stm32f1xx.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/system_stm32f1xx.d" -MT"Core/Src/system_stm32f1xx.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/system_stm32f1xx.o"
+arm-none-eabi-gcc -o "CooperativeScheduler.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\VXL\VXL_CC04\Lab4\CooperativeScheduler\STM32F103C6UX_FLASH.ld" --specs=nosys.specs -Wl,-Map="CooperativeScheduler.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: CooperativeScheduler.elf
+ 
+arm-none-eabi-size   CooperativeScheduler.elf 
+arm-none-eabi-objdump -h -S  CooperativeScheduler.elf  > "CooperativeScheduler.list"
+arm-none-eabi-objcopy  -O ihex  CooperativeScheduler.elf  "CooperativeScheduler.hex"
+   text	   data	    bss	    dec	    hex	filename
+  14236	    120	   2712	  17068	   42ac	CooperativeScheduler.elf
+arm-none-eabi-objcopy  -O binary  CooperativeScheduler.elf  "CooperativeScheduler.bin"
+Finished building: default.size.stdout
+ 
+Finished building: CooperativeScheduler.hex
+Finished building: CooperativeScheduler.bin
+ 
+ 
+Finished building: CooperativeScheduler.list
+ 
+13:37:07 **** Incremental Build of configuration Debug for project CooperativeScheduler ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc "../Core/Src/scheduler.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/scheduler.d" -MT"Core/Src/scheduler.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/scheduler.o"
+arm-none-eabi-gcc -o "CooperativeScheduler.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\VXL\VXL_CC04\Lab4\CooperativeScheduler\STM32F103C6UX_FLASH.ld" --specs=nosys.specs -Wl,-Map="CooperativeScheduler.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: CooperativeScheduler.elf
+ 
+arm-none-eabi-size   CooperativeScheduler.elf 
+arm-none-eabi-objdump -h -S  CooperativeScheduler.elf  > "CooperativeScheduler.list"
+arm-none-eabi-objcopy  -O ihex  CooperativeScheduler.elf  "CooperativeScheduler.hex"
+   text	   data	    bss	    dec	    hex	filename
+  14016	    120	   2552	  16688	   4130	CooperativeScheduler.elf
+arm-none-eabi-objcopy  -O binary  CooperativeScheduler.elf  "CooperativeScheduler.bin"
+Finished building: default.size.stdout
+ 
+Finished building: CooperativeScheduler.bin
+Finished building: CooperativeScheduler.hex
+ 
+ 
+Finished building: CooperativeScheduler.list
+ 
+13:57:18 **** Incremental Build of configuration Debug for project CooperativeScheduler ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc "../Core/Src/scheduler.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/scheduler.d" -MT"Core/Src/scheduler.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/scheduler.o"
+arm-none-eabi-gcc -o "CooperativeScheduler.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\VXL\VXL_CC04\Lab4\CooperativeScheduler\STM32F103C6UX_FLASH.ld" --specs=nosys.specs -Wl,-Map="CooperativeScheduler.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: CooperativeScheduler.elf
+ 
+arm-none-eabi-size   CooperativeScheduler.elf 
+arm-none-eabi-objdump -h -S  CooperativeScheduler.elf  > "CooperativeScheduler.list"
+arm-none-eabi-objcopy  -O ihex  CooperativeScheduler.elf  "CooperativeScheduler.hex"
+arm-none-eabi-objcopy  -O binary  CooperativeScheduler.elf  "CooperativeScheduler.bin"
+   text	   data	    bss	    dec	    hex	filename
+  13900	    120	   2552	  16572	   40bc	CooperativeScheduler.elf
+Finished building: default.size.stdout
+ 
+Finished building: CooperativeScheduler.bin
+Finished building: CooperativeScheduler.hex
+ 
+ 
+Finished building: CooperativeScheduler.list
+ 
+14:12:30 **** Incremental Build of configuration Debug for project CooperativeScheduler ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "CooperativeScheduler.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\VXL\VXL_CC04\Lab4\CooperativeScheduler\STM32F103C6UX_FLASH.ld" --specs=nosys.specs -Wl,-Map="CooperativeScheduler.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: CooperativeScheduler.elf
+ 
+arm-none-eabi-size   CooperativeScheduler.elf 
+arm-none-eabi-objdump -h -S  CooperativeScheduler.elf  > "CooperativeScheduler.list"
+arm-none-eabi-objcopy  -O ihex  CooperativeScheduler.elf  "CooperativeScheduler.hex"
+arm-none-eabi-objcopy  -O binary  CooperativeScheduler.elf  "CooperativeScheduler.bin"
+   text	   data	    bss	    dec	    hex	filename
+  13900	    120	   2552	  16572	   40bc	CooperativeScheduler.elf
+Finished building: default.size.stdout
+ 
+Finished building: CooperativeScheduler.hex
+Finished building: CooperativeScheduler.bin
+ 
+ 
+Finished building: CooperativeScheduler.list
+ 
+14:15:08 **** Incremental Build of configuration Debug for project CooperativeScheduler ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "CooperativeScheduler.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\VXL\VXL_CC04\Lab4\CooperativeScheduler\STM32F103C6UX_FLASH.ld" --specs=nosys.specs -Wl,-Map="CooperativeScheduler.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: CooperativeScheduler.elf
+ 
+arm-none-eabi-size   CooperativeScheduler.elf 
+arm-none-eabi-objdump -h -S  CooperativeScheduler.elf  > "CooperativeScheduler.list"
+arm-none-eabi-objcopy  -O ihex  CooperativeScheduler.elf  "CooperativeScheduler.hex"
+   text	   data	    bss	    dec	    hex	filename
+  13748	    120	   2552	  16420	   4024	CooperativeScheduler.elf
+arm-none-eabi-objcopy  -O binary  CooperativeScheduler.elf  "CooperativeScheduler.bin"
+Finished building: default.size.stdout
+ 
+Finished building: CooperativeScheduler.hex
+Finished building: CooperativeScheduler.bin
+ 
+ 
+Finished building: CooperativeScheduler.list
+ 
+14:16:01 **** Incremental Build of configuration Debug for project CooperativeScheduler ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "CooperativeScheduler.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\VXL\VXL_CC04\Lab4\CooperativeScheduler\STM32F103C6UX_FLASH.ld" --specs=nosys.specs -Wl,-Map="CooperativeScheduler.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: CooperativeScheduler.elf
+ 
+arm-none-eabi-size   CooperativeScheduler.elf 
+arm-none-eabi-objdump -h -S  CooperativeScheduler.elf  > "CooperativeScheduler.list"
+arm-none-eabi-objcopy  -O ihex  CooperativeScheduler.elf  "CooperativeScheduler.hex"
+   text	   data	    bss	    dec	    hex	filename
+  13708	    120	   2552	  16380	   3ffc	CooperativeScheduler.elf
+arm-none-eabi-objcopy  -O binary  CooperativeScheduler.elf  "CooperativeScheduler.bin"
+Finished building: default.size.stdout
+ 
+Finished building: CooperativeScheduler.hex
+Finished building: CooperativeScheduler.bin
+ 
+ 
+Finished building: CooperativeScheduler.list
+ 
+14:28:55 **** Incremental Build of configuration Debug for project CooperativeScheduler ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc "../Core/Src/scheduler.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/scheduler.d" -MT"Core/Src/scheduler.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/scheduler.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:109:16: error: 'Task_Print_Time' undeclared (first use in this function)
+  109 |   SCH_Add_Task(Task_Print_Time, 0, 1);
+      |                ^~~~~~~~~~~~~~~
+../Core/Src/main.c:109:16: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [Core/Src/subdir.mk:37: Core/Src/main.o] Error 1
+"make -j8 all" terminated with exit code 2. Build might be incomplete.
+14:29:10 **** Incremental Build of configuration Debug for project CooperativeScheduler ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "CooperativeScheduler.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\VXL\VXL_CC04\Lab4\CooperativeScheduler\STM32F103C6UX_FLASH.ld" --specs=nosys.specs -Wl,-Map="CooperativeScheduler.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: CooperativeScheduler.elf
+ 
+arm-none-eabi-size   CooperativeScheduler.elf 
+arm-none-eabi-objdump -h -S  CooperativeScheduler.elf  > "CooperativeScheduler.list"
+arm-none-eabi-objcopy  -O ihex  CooperativeScheduler.elf  "CooperativeScheduler.hex"
+   text	   data	    bss	    dec	    hex	filename
+  13652	    120	   2552	  16324	   3fc4	CooperativeScheduler.elf
+arm-none-eabi-objcopy  -O binary  CooperativeScheduler.elf  "CooperativeScheduler.bin"
+Finished building: default.size.stdout
+ 
+Finished building: CooperativeScheduler.hex
+Finished building: CooperativeScheduler.bin
+ 
+ 
+Finished building: CooperativeScheduler.list
+ 
+14:46:39 **** Incremental Build of configuration Debug for project CooperativeScheduler ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc "../Core/Src/scheduler.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/scheduler.d" -MT"Core/Src/scheduler.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/scheduler.o"
+arm-none-eabi-gcc -o "CooperativeScheduler.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\VXL\VXL_CC04\Lab4\CooperativeScheduler\STM32F103C6UX_FLASH.ld" --specs=nosys.specs -Wl,-Map="CooperativeScheduler.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: CooperativeScheduler.elf
+ 
+arm-none-eabi-size   CooperativeScheduler.elf 
+arm-none-eabi-objdump -h -S  CooperativeScheduler.elf  > "CooperativeScheduler.list"
+arm-none-eabi-objcopy  -O ihex  CooperativeScheduler.elf  "CooperativeScheduler.hex"
+   text	   data	    bss	    dec	    hex	filename
+  13792	    120	   2552	  16464	   4050	CooperativeScheduler.elf
+arm-none-eabi-objcopy  -O binary  CooperativeScheduler.elf  "CooperativeScheduler.bin"
+Finished building: default.size.stdout
+ 
+Finished building: CooperativeScheduler.hex
+Finished building: CooperativeScheduler.bin
+ 
+ 
+Finished building: CooperativeScheduler.list
+ 
+14:47:32 **** Incremental Build of configuration Debug for project CooperativeScheduler ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "CooperativeScheduler.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\VXL\VXL_CC04\Lab4\CooperativeScheduler\STM32F103C6UX_FLASH.ld" --specs=nosys.specs -Wl,-Map="CooperativeScheduler.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: CooperativeScheduler.elf
+ 
+arm-none-eabi-size   CooperativeScheduler.elf 
+arm-none-eabi-objdump -h -S  CooperativeScheduler.elf  > "CooperativeScheduler.list"
+arm-none-eabi-objcopy  -O ihex  CooperativeScheduler.elf  "CooperativeScheduler.hex"
+   text	   data	    bss	    dec	    hex	filename
+  13896	    120	   2552	  16568	   40b8	CooperativeScheduler.elf
+arm-none-eabi-objcopy  -O binary  CooperativeScheduler.elf  "CooperativeScheduler.bin"
+Finished building: default.size.stdout
+ 
+Finished building: CooperativeScheduler.hex
+Finished building: CooperativeScheduler.bin
+ 
+ 
+Finished building: CooperativeScheduler.list
+ 
+14:49:07 **** Incremental Build of configuration Debug for project CooperativeScheduler ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "CooperativeScheduler.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\VXL\VXL_CC04\Lab4\CooperativeScheduler\STM32F103C6UX_FLASH.ld" --specs=nosys.specs -Wl,-Map="CooperativeScheduler.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: CooperativeScheduler.elf
+ 
+arm-none-eabi-size   CooperativeScheduler.elf 
+arm-none-eabi-objdump -h -S  CooperativeScheduler.elf  > "CooperativeScheduler.list"
+arm-none-eabi-objcopy  -O ihex  CooperativeScheduler.elf  "CooperativeScheduler.hex"
+   text	   data	    bss	    dec	    hex	filename
+  13928	    120	   2552	  16600	   40d8	CooperativeScheduler.elf
+arm-none-eabi-objcopy  -O binary  CooperativeScheduler.elf  "CooperativeScheduler.bin"
+Finished building: default.size.stdout
+ 
+Finished building: CooperativeScheduler.hex
+Finished building: CooperativeScheduler.bin
+ 
+ 
+Finished building: CooperativeScheduler.list
+ 
+14:54:46 **** Incremental Build of configuration Debug for project CooperativeScheduler ****
+make -j8 all 
+arm-none-eabi-size   CooperativeScheduler.elf 
+   text	   data	    bss	    dec	    hex	filename
+  13928	    120	   2552	  16600	   40d8	CooperativeScheduler.elf
+Finished building: default.size.stdout
+ 
+14:55:09 **** Incremental Build of configuration Debug for project CooperativeScheduler ****
+make -j8 all 
+arm-none-eabi-size   CooperativeScheduler.elf 
+   text	   data	    bss	    dec	    hex	filename
+  13928	    120	   2552	  16600	   40d8	CooperativeScheduler.elf
+Finished building: default.size.stdout
+ 
+15:02:06 **** Incremental Build of configuration Debug for project CooperativeScheduler ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c:69:8: error: expected declaration specifiers or '...' before string constant
+   69 | printf("\r\n>>> %lu ms - TASK ONESHOT EXECUTED AND DELETED <<<\r\n\r\n", get_time());
+      |        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:69:74: error: expected declaration specifiers or '...' before 'get_time'
+   69 | printf("\r\n>>> %lu ms - TASK ONESHOT EXECUTED AND DELETED <<<\r\n\r\n", get_time());
+      |                                                                          ^~~~~~~~
+../Core/Src/main.c:70:1: error: expected identifier or '(' before '}' token
+   70 | }
+      | ^
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:114:16: error: 'Task_Print_Time' undeclared (first use in this function)
+  114 |   SCH_Add_Task(Task_Print_Time, 0, 1);
+      |                ^~~~~~~~~~~~~~~
+../Core/Src/main.c:114:16: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [Core/Src/subdir.mk:37: Core/Src/main.o] Error 1
+"make -j8 all" terminated with exit code 2. Build might be incomplete.
+15:02:09 **** Incremental Build of configuration Debug for project CooperativeScheduler ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:112:16: error: 'Task_Print_Time' undeclared (first use in this function)
+  112 |   SCH_Add_Task(Task_Print_Time, 0, 1);
+      |                ^~~~~~~~~~~~~~~
+../Core/Src/main.c:112:16: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [Core/Src/subdir.mk:37: Core/Src/main.o] Error 1
+"make -j8 all" terminated with exit code 2. Build might be incomplete.
+15:02:24 **** Incremental Build of configuration Debug for project CooperativeScheduler ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "CooperativeScheduler.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\VXL\VXL_CC04\Lab4\CooperativeScheduler\STM32F103C6UX_FLASH.ld" --specs=nosys.specs -Wl,-Map="CooperativeScheduler.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: CooperativeScheduler.elf
+ 
+arm-none-eabi-size   CooperativeScheduler.elf 
+arm-none-eabi-objdump -h -S  CooperativeScheduler.elf  > "CooperativeScheduler.list"
+arm-none-eabi-objcopy  -O ihex  CooperativeScheduler.elf  "CooperativeScheduler.hex"
+   text	   data	    bss	    dec	    hex	filename
+  13872	    120	   2552	  16544	   40a0	CooperativeScheduler.elf
+arm-none-eabi-objcopy  -O binary  CooperativeScheduler.elf  "CooperativeScheduler.bin"
+Finished building: default.size.stdout
+ 
+Finished building: CooperativeScheduler.hex
+Finished building: CooperativeScheduler.bin
+ 
+ 
+Finished building: CooperativeScheduler.list
+ 
+15:12:34 **** Incremental Build of configuration Debug for project CooperativeScheduler ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/scheduler.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/scheduler.d" -MT"Core/Src/scheduler.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/scheduler.o"
+arm-none-eabi-gcc -o "CooperativeScheduler.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\VXL\VXL_CC04\Lab4\CooperativeScheduler\STM32F103C6UX_FLASH.ld" --specs=nosys.specs -Wl,-Map="CooperativeScheduler.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: CooperativeScheduler.elf
+ 
+arm-none-eabi-size   CooperativeScheduler.elf 
+arm-none-eabi-objdump -h -S  CooperativeScheduler.elf  > "CooperativeScheduler.list"
+arm-none-eabi-objcopy  -O ihex  CooperativeScheduler.elf  "CooperativeScheduler.hex"
+arm-none-eabi-objcopy  -O binary  CooperativeScheduler.elf  "CooperativeScheduler.bin"
+   text	   data	    bss	    dec	    hex	filename
+  13812	    120	   2552	  16484	   4064	CooperativeScheduler.elf
+Finished building: default.size.stdout
+ 
+Finished building: CooperativeScheduler.bin
+Finished building: CooperativeScheduler.hex
+ 
+ 
+Finished building: CooperativeScheduler.list
+ 
+15:18:33 **** Incremental Build of configuration Debug for project CooperativeScheduler ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc "../Core/Src/scheduler.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/scheduler.d" -MT"Core/Src/scheduler.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/scheduler.o"
+arm-none-eabi-gcc -o "CooperativeScheduler.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\VXL\VXL_CC04\Lab4\CooperativeScheduler\STM32F103C6UX_FLASH.ld" --specs=nosys.specs -Wl,-Map="CooperativeScheduler.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: CooperativeScheduler.elf
+ 
+arm-none-eabi-size   CooperativeScheduler.elf 
+arm-none-eabi-objdump -h -S  CooperativeScheduler.elf  > "CooperativeScheduler.list"
+arm-none-eabi-objcopy  -O ihex  CooperativeScheduler.elf  "CooperativeScheduler.hex"
+   text	   data	    bss	    dec	    hex	filename
+  13812	    120	   2552	  16484	   4064	CooperativeScheduler.elf
+arm-none-eabi-objcopy  -O binary  CooperativeScheduler.elf  "CooperativeScheduler.bin"
+Finished building: default.size.stdout
+ 
+Finished building: CooperativeScheduler.hex
+Finished building: CooperativeScheduler.bin
+ 
+ 
+Finished building: CooperativeScheduler.list
+ 
+15:19:14 **** Incremental Build of configuration Debug for project CooperativeScheduler ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "CooperativeScheduler.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\VXL\VXL_CC04\Lab4\CooperativeScheduler\STM32F103C6UX_FLASH.ld" --specs=nosys.specs -Wl,-Map="CooperativeScheduler.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: CooperativeScheduler.elf
+ 
+arm-none-eabi-size   CooperativeScheduler.elf 
+arm-none-eabi-objdump -h -S  CooperativeScheduler.elf  > "CooperativeScheduler.list"
+arm-none-eabi-objcopy  -O ihex  CooperativeScheduler.elf  "CooperativeScheduler.hex"
+   text	   data	    bss	    dec	    hex	filename
+  13812	    120	   2552	  16484	   4064	CooperativeScheduler.elf
+arm-none-eabi-objcopy  -O binary  CooperativeScheduler.elf  "CooperativeScheduler.bin"
+Finished building: default.size.stdout
+ 
+Finished building: CooperativeScheduler.hex
+ 
+Finished building: CooperativeScheduler.bin
+Finished building: CooperativeScheduler.list
+ 
+ 
+15:50:26 **** Incremental Build of configuration Debug for project CooperativeScheduler ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "CooperativeScheduler.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\VXL\VXL_CC04\Lab4\CooperativeScheduler\STM32F103C6UX_FLASH.ld" --specs=nosys.specs -Wl,-Map="CooperativeScheduler.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: CooperativeScheduler.elf
+ 
+arm-none-eabi-size   CooperativeScheduler.elf 
+arm-none-eabi-objdump -h -S  CooperativeScheduler.elf  > "CooperativeScheduler.list"
+arm-none-eabi-objcopy  -O ihex  CooperativeScheduler.elf  "CooperativeScheduler.hex"
+   text	   data	    bss	    dec	    hex	filename
+  13812	    120	   2552	  16484	   4064	CooperativeScheduler.elf
+arm-none-eabi-objcopy  -O binary  CooperativeScheduler.elf  "CooperativeScheduler.bin"
+Finished building: default.size.stdout
+ 
+Finished building: CooperativeScheduler.bin
+Finished building: CooperativeScheduler.hex
+ 
+ 
+Finished building: CooperativeScheduler.list
+ 

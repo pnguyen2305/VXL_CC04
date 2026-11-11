@@ -1,0 +1,114 @@
+/*
+ * scheduler.c
+ *
+ *  Created on: Nov 4, 2026
+ *      Author: DELL
+ */
+
+#include "scheduler.h"
+
+sTask SCH_tasks_G[SCH_MAX_TASKS];
+uint8_t current_index_task = 0;
+
+void SCH_Init(void) {
+    current_index_task = 0;
+    for (int i = 0; i < SCH_MAX_TASKS; i++) {
+        SCH_tasks_G[i].pTask = 0;
+    }
+}
+
+void SCH_Update(void) {
+    if (current_index_task == 0) return;
+
+    // 1. Chỉ trừ thời gian nếu Task chưa đến hạn
+    if (SCH_tasks_G[0].Delay > 0) {
+        SCH_tasks_G[0].Delay -= 1;
+    }
+
+    // 2. KHÓA BOM RUNME: Chỉ cắm cờ nếu Delay == 0 VÀ chưa từng được cắm cờ trước đó
+    if (SCH_tasks_G[0].Delay == 0 && SCH_tasks_G[0].RunMe == 0) {
+        SCH_tasks_G[0].RunMe = 1;
+
+        // Cắm cờ luôn cho các Task có cùng mốc thời gian đứng ngay phía sau
+        int next = 1;
+        while (next < current_index_task && SCH_tasks_G[next].Delay == 0) {
+            SCH_tasks_G[next].RunMe = 1;
+            next++;
+        }
+    }
+}
+
+uint32_t SCH_Add_Task(void (*pFunction)(), uint32_t DELAY, uint32_t PERIOD) {
+    if (current_index_task >= SCH_MAX_TASKS) return SCH_MAX_TASKS;
+
+    uint8_t newIndex = 0;
+    uint32_t delta = DELAY;
+
+    // VÒNG LẶP CHUẨN: Chỉ tính toán biến delta, tuyệt đối không đụng vào mảng
+    while (newIndex < current_index_task && SCH_tasks_G[newIndex].Delay <= delta) {
+        delta -= SCH_tasks_G[newIndex].Delay;
+        newIndex++;
+    }
+
+    // Dịch mảng xuống để lấy chỗ trống
+    for (int i = current_index_task; i > newIndex; i--) {
+        SCH_tasks_G[i] = SCH_tasks_G[i - 1];
+    }
+
+    // Đưa Task mới vào hàng
+    SCH_tasks_G[newIndex].pTask = pFunction;
+    SCH_tasks_G[newIndex].Delay = delta;
+    SCH_tasks_G[newIndex].Period = PERIOD;
+    SCH_tasks_G[newIndex].RunMe = 0;
+    SCH_tasks_G[newIndex].TaskID = current_index_task;
+
+    // SỬA LỖI DÂY CHUYỀN: Trừ lại Delay cho Task bị đẩy xuống đứng ngay sau nó
+    if (newIndex + 1 < current_index_task + 1) {
+        SCH_tasks_G[newIndex + 1].Delay -= delta;
+    }
+
+    current_index_task++;
+    return SCH_tasks_G[newIndex].TaskID;
+}
+
+void SCH_Dispatch_Tasks(void) {
+    if (current_index_task > 0 && SCH_tasks_G[0].RunMe > 0) {
+        (*SCH_tasks_G[0].pTask)(); // Thực thi Task
+        SCH_tasks_G[0].RunMe -= 1;
+
+        void (*tempTask)() = SCH_tasks_G[0].pTask;
+        uint32_t tempPeriod = SCH_tasks_G[0].Period;
+
+        // Xóa sổ (Gọi ngầm hàm Delete)
+        SCH_Delete_Task(0);
+
+        // Nạp lại nếu có chu kỳ lặp
+        if (tempPeriod != 0) {
+            SCH_Add_Task(tempTask, tempPeriod, tempPeriod);
+        }
+    }
+}
+
+uint8_t SCH_Delete_Task(uint32_t TASK_INDEX) {
+    if (TASK_INDEX >= current_index_task) return 0;
+
+    // Trả lại thời gian chờ cho Task đứng sau, đảm bảo nó không bị nổ sớm
+    if (TASK_INDEX + 1 < current_index_task) {
+        SCH_tasks_G[TASK_INDEX + 1].Delay += SCH_tasks_G[TASK_INDEX].Delay;
+    }
+
+    // Dồn mảng
+    for (int i = TASK_INDEX; i < current_index_task - 1; i++) {
+        SCH_tasks_G[i] = SCH_tasks_G[i + 1];
+    }
+
+    current_index_task--;
+
+    // Dọn rác
+    SCH_tasks_G[current_index_task].pTask = 0;
+    SCH_tasks_G[current_index_task].Delay = 0;
+    SCH_tasks_G[current_index_task].Period = 0;
+    SCH_tasks_G[current_index_task].RunMe = 0;
+
+    return 1;
+}

@@ -1,0 +1,84 @@
+/*
+ * scheduler.c
+ *
+ *  Created on: Nov 4, 2026
+ *      Author: DELL
+ */
+
+#include "scheduler.h"
+
+// Mảng chứa các Task (Danh sách chờ)
+sTask SCH_tasks_G[SCH_MAX_TASKS];
+
+// Hàm khởi tạo: Xóa sạch danh sách chờ khi hệ thống mới bật lên
+void SCH_Init(void) {
+    for (int i = 0; i < SCH_MAX_TASKS; i++) {
+        SCH_Delete_Task(i);
+    }
+}
+
+// Hàm cập nhật (Được gọi mỗi 10ms trong ngắt Timer)
+void SCH_Update(void) {
+    for (int i = 0; i < SCH_MAX_TASKS; i++) {
+        if (SCH_tasks_G[i].pTask) { // Nếu có task đang tồn tại ở vị trí này[cite: 74]
+            if (SCH_tasks_G[i].Delay == 0) { // Nếu đã đếm ngược xong[cite: 74]
+                SCH_tasks_G[i].RunMe += 1;   // Cắm cờ báo hiệu cho task chạy[cite: 74]
+                if (SCH_tasks_G[i].Period) {
+                    SCH_tasks_G[i].Delay = SCH_tasks_G[i].Period; // Nạp lại thời gian đếm ngược cho lần sau[cite: 74]
+                }
+            } else {
+                SCH_tasks_G[i].Delay -= 1; // Nếu chưa xong thì trừ đi 1 tick[cite: 74]
+            }
+        }
+    }
+}
+
+// Hàm đăng ký Task mới vào danh sách chờ
+uint32_t SCH_Add_Task(void (*pFunction)(), uint32_t DELAY, uint32_t PERIOD) {
+    int Index = 0;
+    // Tìm một chỗ trống trong danh sách[cite: 75]
+    while ((SCH_tasks_G[Index].pTask != 0) && (Index < SCH_MAX_TASKS)) {
+        Index++;[cite: 75]
+    }
+    // Nếu danh sách đầy thì báo lỗi (trả về giá trị MAX)[cite: 76]
+    if (Index == SCH_MAX_TASKS) {
+        return SCH_MAX_TASKS;
+    }
+
+    // Ghi thông tin công việc vào chỗ trống tìm được[cite: 76]
+    SCH_tasks_G[Index].pTask = pFunction;
+    SCH_tasks_G[Index].Delay = DELAY;
+    SCH_tasks_G[Index].Period = PERIOD;
+    SCH_tasks_G[Index].RunMe = 0;
+    SCH_tasks_G[Index].TaskID = Index;
+
+    return Index; // Trả về số thứ tự (ID) của task để sau này dễ quản lý[cite: 76]
+}
+
+// Hàm Điều phối (Đi tuần tra và gọi hàm chạy)
+void SCH_Dispatch_Tasks(void) {
+    for (int i = 0; i < SCH_MAX_TASKS; i++) {
+        if (SCH_tasks_G[i].RunMe > 0) { // Nếu thấy cờ báo hiệu được cắm lên[cite: 76]
+            (*SCH_tasks_G[i].pTask)();  // Lôi cái hàm đó ra chạy ngay lập tức[cite: 76]
+            SCH_tasks_G[i].RunMe -= 1;  // Chạy xong thì hạ cờ xuống[cite: 76]
+
+            // Nếu đây là task "One-shot" (Chạy 1 lần rồi thôi, chu kỳ = 0) thì xóa nó luôn[cite: 76]
+            if (SCH_tasks_G[i].Period == 0) {
+                SCH_Delete_Task(i);
+            }
+        }
+    }
+}
+
+// Hàm xóa Task
+uint8_t SCH_Delete_Task(uint32_t TASK_INDEX) {
+    if (SCH_tasks_G[TASK_INDEX].pTask == 0) {
+        return 0; // Báo lỗi nếu xóa nhầm chỗ trống[cite: 77]
+    } else {
+        SCH_tasks_G[TASK_INDEX].pTask = 0;
+        SCH_tasks_G[TASK_INDEX].Delay = 0;
+        SCH_tasks_G[TASK_INDEX].Period = 0;
+        SCH_tasks_G[TASK_INDEX].RunMe = 0;
+        return 1;
+    }
+}

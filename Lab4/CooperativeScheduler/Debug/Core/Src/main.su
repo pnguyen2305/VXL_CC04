@@ -1,0 +1,15 @@
+main.c:50:10:get_time	4	static
+main.c:70:6:Task_1	8	static
+main.c:71:6:Task_2	8	static
+main.c:72:6:Task_3	8	static
+main.c:73:6:Task_4	8	static
+main.c:74:6:Task_5	8	static
+main.c:75:6:Task_OneShot	8	static
+main.c:84:5:main	8	static
+main.c:139:6:SystemClock_Config	72	static
+main.c:175:13:MX_TIM2_Init	32	static
+main.c:220:13:MX_USART1_UART_Init	8	static
+main.c:253:13:MX_GPIO_Init	16	static
+main.c:262:6:HAL_TIM_PeriodElapsedCallback	16	static
+main.c:269:5:__io_putchar	16	static
+main.c:279:6:Error_Handler	4	static,ignoring_inline_asm
